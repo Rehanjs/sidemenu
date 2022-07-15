@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modren Side Menu</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <div class="Side_menu_icon" id="Side_Nav_btn" onclick="ShowHide()">
+            <span class="line1 Side_icon_lines" id="Line_one"></span>
+            <span class="line2 Side_icon_lines" id="Line_two"></span>
+            <span class="line3 Side_icon_lines" id="Line_three"></span>
+        </div>
+   
+
+    <!-- Full Side Bar  -->
+    
+    <div class="Side_bar_container" id="Side_menu_background">
+        <!-- Side Bar Background -->
+ 
+        <div class="Side_bar_background" id="Side_bar_back_ground"></div>
+        <!-- Basic Options Of Nav bar to link other pages of the website  -->
+        <!-- Go to Home Link  -->
+   
+        <div class="Side_bar_home_option basic_options">
+           <img src="img/Home.png" class="Basic_options_imgs home_img" alt=""> <a href="#" class="Basic_links_navigation" >Home</a>
+        </div>
+            <!-- Go to About Us Link  -->
+        <div class="Side_bar_About_us_option basic_options">
+            <img src="img/About_us.png" class="Basic_options_imgs" alt=""><a href="#" class="Basic_links_navigation" >About Us</a>
+        </div>
+            <!-- Go to Contact Us Link  -->
+        <div class="Side_bar_Contact_us_option basic_options">
+            <img src="img/Contact_us.png" class="Basic_options_imgs" alt=""><a href="#" class="Basic_links_navigation" >Contact Us</a>
+        </div>
+            <!-- Go to Services Link  -->
+        <div class="Side_bar_Services_option basic_options">
+            <img src="img/Services.png" class="Basic_options_imgs Services_img" alt=""><a href="#" class="Basic_links_navigation" >Services</a>
+        </div>
+        <!-- Catagories Names  -->
+        <div class="side_bar_catagori_1 side_bar_catagories" onclick="show_computers_catagori_details()">Computers
+            <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_2 side_bar_catagories" onclick="show_grocery_catagori_details()">Grocery
+            <div class="arrow_div">
+                <div class="Category_arrow">
+                   <div class="arrow_line_1"></div>
+                   <div class="arrow_line_2"></div>
+                </div>
+               </div>
+        </div>
+        <div class="side_bar_catagori_3 side_bar_catagories"onclick="show_animal_catagori_details()" >Animals
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_4 side_bar_catagories" onclick="show_furniture_catagori_details()">Furniture
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_5 side_bar_catagories" onclick="show_Softwares_catagori_details()">Softwares
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_6 side_bar_catagories" onclick="show_Toys_catagori_details()">Toys
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_7 side_bar_catagories" onclick="show_Home_appliances_catagori_details()">Home Appliances
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_8 side_bar_catagories" onclick="show_Home_Decoration_catagori_details()">Home Decoration
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_9 side_bar_catagories" onclick="show_Gents_Garments_catagori_details()">Gents Garments
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_10 side_bar_catagories extra_categories" id="Ex_Category1"  onclick="show_Ladies_Garments_catagori_details()">Ladies Garments
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_11 side_bar_catagories extra_categories"  id="Ex_Category2" onclick="show_Vehicle_Parts_Garments_catagori_details()">Vehical Parts
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_12 side_bar_catagories extra_categories" id="Ex_Category3"  onclick="show_Property_catagori_details()" >Property
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_13 side_bar_catagories extra_categories"id="Ex_Category4"  onclick="show__catagori_details()">Books
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_14 side_bar_catagories extra_categories" id="Ex_Category5"  onclick="show__catagori_details()">Food
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+        </div>
+        <div class="side_bar_catagori_15 side_bar_catagories extra_categories" id="Ex_Category6"  onclick="show__catagori_details()">Office
+        <div class="arrow_div">
+             <div class="Category_arrow">
+                <div class="arrow_line_1"></div>
+                <div class="arrow_line_2"></div>
+             </div>
+            </div>
+           
+        </div>
+        <div class="See_more_container side_bar_catagories" onclick="Show_more_categories()">
+            <div class="See_more_div" id="See_more_cate" >See More</div>
+            <div class="See_more_arrow">
+                <div class="More_cat_arrow" id="See_less_arrow">
+                   <div class="see_arrow_line_1"></div>
+                   <div class="see_arrow_line_2"></div>
+                </div>
+               </div>
+        </div>
+        <!-- Each Cata Gori Options  -->
+        <div class="side_menu_top" id="Side_catagori_logo">
+         
+            <div class="cross_menu_icon" id="Cross_Nav_btn" onclick="ShowHide()">
+                <span class="line1_cross cross_icon_lines"></span>
+                <span class="line2 cross_icon_lines"></span>
+            </div>
+            <!-- Sign in Option/Button  -->
+            <div class="Sign_in_container">
+                <div class="Sign_in_div">
+                    <a href="#" class="Sign_in_btn">Sign In</a>
+                </div>
+            </div>
+            <!-- Ends Here  -->
+            <div class="Three_dots_menu_cont" id="Three_dots_Side_menu_container">
+                <div class="three_dots_div" onclick="Show_dots_details()">
+                    <div id="Side_Dot1" class="Side_menu_dots"></div>
+                    <div id="Side_Dot2" class="Side_menu_dots"></div>
+                    <div id="Side_Dot3" class="Side_menu_dots"></div>
+                </div>
+                <div class="dots_Details_cont" id="Dots_Details_container">
+                    <div class="Dots_details_box">
+                        <div class="Three_dot_items Three_dots_opt_one"><a href="#" class="three_dots_anchors three_dot_anchor_one">Facebook</a></div>
+                        <div class="Three_dot_items Three_dots_opt_two"><a href="#" class="three_dots_anchors three_dot_anchor_two">Youtube</a></div>
+                        <div class="Three_dot_items Three_dots_opt_three"><a href="#" class="three_dots_anchors three_dot_anchor_three">Instagram</a></div>
+                        <div class="Three_dot_items Three_dots_opt_four"><a href="#" class="three_dots_anchors three_dot_anchor_four">Twitter</a></div>
+                        <div class="Three_dot_items Three_dots_opt_four Close_dot_details" onclick="Show_dots_details()">
+                            <span class="line1_cross cross_icon_lines dot_details_cross_lines" ></span>
+                            <span class="line2 cross_icon_lines dot_details_cross_lines" ></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catagories_options_container" id="cata_gori_container">
+
+            <div class="Catagories_details" id="Catagori_Details_box" >
+                <div class="go_back_div" onclick="Hide_cata_details()">
+                    <img src="img/Down_Arrow_Black.png" alt="Back" class="Go_back" onclick="" id="go_back" >
+                </div>
+               <div class="cata_opts_div" id="Cata_opts_1">
+                   <a href="#" class="cata_options" id="cat_option1"></a>
+                </div>
+               <div class="cata_opts_div">
+                   <a href="#" class="cata_options" id="cat_option2"></a>
+                </div>
+               <div class="cata_opts_div">
+                   <a href="#" class="cata_options" id="cat_option3"></a>
+                </div>
+               <div class="cata_opts_div">
+                   <a href="#" class="cata_options" id="cat_option4"></a>
+                </div>
+               <div class="cata_opts_div">
+                   <a href="#" class="cata_options" id="cat_option5"></a>
+                </div>
+               <div class="cata_opts_div">
+                   <a href="#" class="cata_options" id="cat_option6"></a>
+                </div>
+               <div class="cata_opts_div">
+                   <a href="#" class="cata_options" id="cat_option7"></a>
+                </div>
+               <div class="cata_opts_div">
+                   <a href="#" class="cata_options" id="cat_option8"></a>
+                </div>
+               <div class="cata_opts_div">
+                   <a href="#" class="cata_options" id="cat_option9"></a>
+                </div>
+               <div class="cata_opts_div">
+                   <a href="#" class="cata_options" id="cat_option10"></a>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="Index.js"></script>
+</body>
+</html>

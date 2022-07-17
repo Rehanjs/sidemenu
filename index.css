@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   user-select: none;
+  -webkit-tap-highlight-color:transparent;
 }
 body{
     background-color: rgba(212, 206, 206, 0.466);

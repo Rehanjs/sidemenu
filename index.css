@@ -206,11 +206,11 @@ body{
 
 /* Side Bar catagories More Options   */
 .catagories_options_container {
-  height: 104%;
+  height: 130vh;
   width: 100%;
   position: absolute;
   z-index: -1;
-  top: 0px;
+  top: -10px;
   left: 0%;
 }
 

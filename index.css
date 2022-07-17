@@ -3,6 +3,17 @@
             Side Menu | Side Bar | Side Menu | Side Menu | Side Bar | Side Menu
     ===============================================================================
     =============================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+body{
+    background-color: rgba(212, 206, 206, 0.466);
+}
 :root {
   /* Side Nav Basic Options And All Catagories  */
   --Side_nav_cata_text-: black;

@@ -1,4 +1,10 @@
-// Hiding The Side Bar
+/*===============================================================================
+    ===============================================================================
+            Side Menu | Side Bar | Side Menu | Side Menu | Side Bar | Side Menu
+    ===============================================================================
+    =============================================================================== */
+
+    // Hiding The Side Bar
 document.getElementById("Catagori_Details_box").style.left = "-101%";
 // Ends
 /*=========================================================
@@ -410,23 +416,20 @@ show_Vehicle_Parts_Garments_catagori_details = () => {
 /*================================================================================
                 Show & Hide The Side Menu By clicking Three Lines Side button
 ==================================================================================*/
-document.getElementById("Side_menu_background").style.left = "-101%";
+document.getElementById("Side_menu_background").style.left = "-401vw";
 ShowHide = () => {
     let Side_nav_btn = document.getElementById("Side_Nav_btn");
     let Side_menu = document.getElementById("Side_menu_background");
     let cross_nav_btn = document.getElementById("Cross_Nav_btn");
     // Three Details Box Variable 
     let Details_container = document.getElementById("Dots_Details_container");
-    if (Side_menu.style.left == "-101%") {
+    if (Side_menu.style.left == "-401vw") {
         Side_menu.style.left = "0%";
-        Side_menu.style.transition = ".3s ease-in-out";
-        Side_nav_btn.style.opacity = "0";
-        Side_nav_btn.style.transition = ".3s ease";
+        Side_menu.style.transition = ".4s ease-in-out";
         cross_nav_btn.style.opacity = "1";
     } else {
-        Side_menu.style.left = "-101%";
-        Side_nav_btn.style.opacity = "1";
-        Side_nav_btn.style.transition = "1.3s ease";
+        Side_menu.style.transition = ".6s ease-in-out";
+        Side_menu.style.left = "-401vw";
         // Close The Three Dots Details Box (if it is opened) when closing the side menu 
         Details_container.style.transition='.4s ease-in-out'
         Details_container.style.opacity='0';
